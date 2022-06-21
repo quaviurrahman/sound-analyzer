@@ -8,7 +8,7 @@ import scipy.io.wavfile as wavfile
 import IPython
 
 # read signal and get normalized segment feature statistics:
-input_file = "data/music/cup_of_coffee.wav"
+input_file = "data/another_cup_of_coffee.wav"
 fs, x = read_audio_file(input_file)
 mt_size, mt_step, st_win = 5, 0.5, 0.1
 [mt_feats, st_feats, _] = mT(x, fs, mt_size * fs, mt_step * fs,
